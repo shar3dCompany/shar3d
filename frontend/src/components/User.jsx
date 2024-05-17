@@ -394,10 +394,10 @@ const UserDetail = () => {
                     </div>
                     <div className="plans">
                       {user.buyer_plan === true ? (
-                        <div className="user-plan">Diseñador</div>
+                        <div className="user-plan">Comprador</div>
                       ) : null}
                       {user.designer_plan === true ? (
-                        <div className="user-plan">Impresor</div>
+                        <div className="user-plan">Diseñador</div>
                       ) : null}
                       {user.seller_plan === true ? (
                         <div className="user-plan">Vendedor</div>
