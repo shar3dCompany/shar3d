@@ -193,7 +193,7 @@ const CustomDesignPrinters = () => {
           </div>
         </>
       )}
-      {data && currentUser && data.status === "printing" && currentUser.id != data.buyer && (
+      {data && currentUser && data.status === "searching" && currentUser.id != data.buyer && (
         <>
           {!data.printer && currentUser.id != data.buyer && (
             <div style={{ textAlign: "center", alignItems: "center" }}>
