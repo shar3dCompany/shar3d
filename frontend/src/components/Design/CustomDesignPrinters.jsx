@@ -128,7 +128,7 @@ const CustomDesignPrinters = () => {
                     ? "azul"
                     : "Color desconocido"}
                 </p>
-                <h2>Datos de entrega</h2>
+                <h2>Datos para entregar</h2>
                 <p>Ciudad: {data.city}</p>
                 <p>Código Postal: {data.postal_code}</p>
                 <p>Dirección: {data.address}</p>
