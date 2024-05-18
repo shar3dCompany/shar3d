@@ -16,7 +16,10 @@ import AddUserReport from './AddUserReport.jsx';
 
 const id = window.location.href.split('/')[4];
 
-const UserDetail = () => {
+const UserDetail = ({
+  cart,
+  setCart,
+}) => {
   const [userLogued, setUserLogued] = useState(null);
   const [user, setUser] = useState(null);
   const currentUserID = localStorage.getItem('userId');
@@ -444,7 +447,7 @@ const UserDetail = () => {
 
         <div className="user-products-section">
           <Text type={TEXT_TYPES.TITLE_BOLD} text='Productos destacados' />
-          <ProductsGrid gridType={GRID_TYPES.MAIN_PAGE} filter={`?seller=${id}`} main={true} />
+          <ProductsGrid gridType={GRID_TYPES.MAIN_PAGE} filter={`?seller=${id}`} main={true} cart={cart} setCart={setCart}  />
         </div>
 
         <div className="reviews-section">
