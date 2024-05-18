@@ -249,7 +249,7 @@ class ProductDetail extends React.Component {
 
         <div className="related-products">
           <Text type={TEXT_TYPES.TITLE_BOLD} text={relatedProductsTitle()} />
-          <ProductsGrid gridType={GRID_TYPES.MAIN_PAGE} main={ true } elementType={product.product_type} excludedProducts={[product.id]} />
+          <ProductsGrid gridType={GRID_TYPES.MAIN_PAGE} main={ true } elementType={product.product_type} excludedProducts={[product.id]} cart={cart} setCart={setCart} />
         </div>
       </div>
     );
