@@ -89,7 +89,7 @@ function App() {
                     <Route path="/artists" element={<ArtistsPage/>}/>
                     <Route path="/register" element={<RegisterFormPage/>}/>
                     <Route path="/login" element={<LoginFormPage/>}/>
-                    <Route path="/user-details/:id" element={<UserDetail/>}/>
+                    <Route path="/user-details/:id" element={<UserDetail cart={cart} setCart={setCart}/>}/>
                     <Route path="/update-profile/:id" element={<EditProfilePage/>}/>
                     <Route path="/user-details/:id/products" element={<ProductsList/>}/>
                     <Route path="/user-details/:id/following" element={<FollowingList/>}/>
