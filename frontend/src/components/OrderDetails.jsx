@@ -83,7 +83,7 @@ export default class CustomModelDetails extends React.Component{
                             {ownUser && <div className='right-bar'>
                                 <h2>Detalles de entrega</h2>
                                 <hr />
-                                {data && <p><span>Correo electrónico:</span> <span>{data.buyer ? data.buyer.email : data.buyer_mail}</span></p>}
+                                {data && <p><span>Correo electrónico:</span> <span>{data.buyer ? data.buyer_mail : data.buyer_mail}</span></p>}
                                 {data && <p><span>Ciudad:</span> <span>{data.city}</span></p>}
                                 {data && <p><span>Código Postal:</span> <span>{data.postal_code.toString().padStart(5, "0")}</span></p>}
                                 {data && <p><span>Dirección:</span> <span>{data.address}</span></p>}
